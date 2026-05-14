@@ -33,20 +33,28 @@
   <div class="container">
 
     <!-- LEFT FORM -->
-    <div class="form-section">
+ <div class="form-section">
 
-      <h3>Inward Details</h3>
+  <h3>Inward Details</h3>
 
-      <input placeholder="Party Name">
-      <input placeholder="Quality">
-      <input placeholder="Lot No">
-      <input placeholder="Design No">
-      <input placeholder="Color">
-      <input placeholder="Rate">
+  <div class="form-grid">
 
-      <button class="btn">Save</button>
+    <input id="bale" placeholder="Bale No">
+    <input id="quality" placeholder="Fabric Quality">
+    <input id="design" placeholder="Design No">
+    <input id="color" placeholder="Color">
+    <input id="pcs" placeholder="PCS">
+    <input id="qty" placeholder="Qty">
+    <input id="uom" placeholder="UOM">
 
-    </div>
+  </div>
+
+  <div class="btn-group">
+    <button class="btn" onclick="generatePCS()">Generate PCS</button>
+    <button class="btn" onclick="saveData()">Save</button>
+  </div>
+
+</div>
 
     <!-- RIGHT PCS TABLE -->
     <div class="pcs-section">
@@ -63,10 +71,10 @@
         </thead>
 
         <tbody>
-          <tr><td>1</td><td>115</td><td>X</td></tr>
+          <!-- <tr><td>1</td><td>115</td><td>X</td></tr>
           <tr><td>2</td><td>114</td><td>X</td></tr>
           <tr><td>3</td><td>115</td><td>X</td></tr>
-          <tr><td>4</td><td>82</td><td>X</td></tr>
+          <tr><td>4</td><td>82</td><td>X</td></tr> -->
         </tbody>
       </table>
 

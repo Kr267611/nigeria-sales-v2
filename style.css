@@ -60,7 +60,7 @@ body {
   color: white;
   padding: 10px;
   border: none;
-  width: 100%;
+  width: 50%;
 }
 
 /* Right Table */
@@ -91,4 +91,31 @@ th {
 
 .tab-content.active {
   display: block;
+}
+
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 inputs per row */
+  gap: 10px;
+}
+
+.form-grid input {
+  padding: 8px;
+  width: 80%;
+}
+
+.btn-group {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  background: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
 }
