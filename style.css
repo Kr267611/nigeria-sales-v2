@@ -1,0 +1,94 @@
+body {
+  font-family: Arial;
+  background: #f4f6f9;
+  margin: 0;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(to right, #2c7be5, #246475);
+  color: white;
+  padding: 15px;
+  text-align: start;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  background: white;
+  padding: 10px;
+}
+
+.tabs button {
+  border: none;
+  background: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tabs .active {
+  border-bottom: 3px solid green;
+  font-weight: bold;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Left Form */
+.form-section {
+  width: 40%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-section input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+/* Button */
+.btn {
+  background: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+
+/* Right Table */
+.pcs-section {
+  width: 60%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background: #f1f1f1;
+}
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
