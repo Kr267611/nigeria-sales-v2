@@ -6,9 +6,10 @@ body {
 
 /* Header */
 .header {
-  background: linear-gradient(to right, #2c7be5, #246475);
-  color: white;
-  padding: 15px;
+  /* background: linear-gradient(to right, #2c7be5, #246475); */
+  /* color: white; */
+  /* padding: 15px; */
+  padding-left: 15px;
   text-align: start;
 }
 
@@ -80,6 +81,7 @@ th, td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: center;
+  font-size: small;
 }
 
 th {

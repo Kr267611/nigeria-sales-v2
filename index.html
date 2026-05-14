@@ -9,7 +9,7 @@
 
 <!-- HEADER -->
 <div class="header">
-  <h1>Nigeria Sales System</h1>
+  <h2>Nigeria Sales System</h2>
 </div>
 
 <!-- TABS -->
@@ -35,11 +35,12 @@
     <!-- LEFT FORM -->
  <div class="form-section">
 
-  <h3>Inward Details</h3>
+  <h4>Inward Details</h4>
 
   <div class="form-grid">
 
     <input id="bale" placeholder="Bale No">
+    <input id="name" placeholder="Fabric Name">
     <input id="quality" placeholder="Fabric Quality">
     <input id="design" placeholder="Design No">
     <input id="color" placeholder="Color">
@@ -52,6 +53,7 @@
   <div class="btn-group">
     <button class="btn" onclick="generatePCS()">Generate PCS</button>
     <button class="btn" onclick="saveData()">Save</button>
+    <button class="btn" onclick="clearForm()">Clear</button>
   </div>
 
 </div>
@@ -59,7 +61,7 @@
     <!-- RIGHT PCS TABLE -->
     <div class="pcs-section">
 
-      <h3>Taka Details</h3>
+      <h4>Taka Details</h4>
 
       <table>
         <thead>
@@ -71,10 +73,6 @@
         </thead>
 
         <tbody>
-          <!-- <tr><td>1</td><td>115</td><td>X</td></tr>
-          <tr><td>2</td><td>114</td><td>X</td></tr>
-          <tr><td>3</td><td>115</td><td>X</td></tr>
-          <tr><td>4</td><td>82</td><td>X</td></tr> -->
         </tbody>
       </table>
 

@@ -15,6 +15,7 @@ let generatedData = [];
 function generatePCS() {
 
   const bale = document.getElementById("bale").value;
+  const name = document.getElementById("name").value;
   const quality = document.getElementById("quality").value;
   const design = document.getElementById("design").value;
   const color = document.getElementById("color").value;
@@ -31,6 +32,7 @@ function generatePCS() {
 
     let rowData = [
       bale,
+      name,
       quality,
       design,
       color,
@@ -51,9 +53,41 @@ function generatePCS() {
 
     table.innerHTML += row;
   }
+  console.log(generatedData);
 }
 
 function deleteRow(btn) {
   btn.closest("tr").remove();
 }
 
+function saveData() {
+
+  fetch("https://script.google.com/a/macros/bhaskarsilkmills.in/s/AKfycbwkhZg1M4WNT1avyxV_PAOLV8XPeg7Qon50aBrO6EjXR_fzwIpvbeIZAFCy5HHUH16u/exec", {
+    method: "POST",
+    mode: "no-cors",
+    body: JSON.stringify(generatedData),
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+  .then(res => res.text())
+  .then(data => {
+    alert("Data Saved Successfully");
+  })
+  .catch(err => {
+    console.error(err);
+    alert("Error saving data");
+  });
+}
+
+// Clear form and reset data
+function clearForm() {
+  document.getElementById("bale").value = "";
+  document.getElementById("quality").value = "";
+  document.getElementById("design").value = "";
+  document.getElementById("color").value = "";
+  document.getElementById("pcs").value = "";
+  document.getElementById("qty").value = "";
+  document.getElementById("uom").value = "";
+  document.getElementById("name").value = "";
+}   
